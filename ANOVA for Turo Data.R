@@ -108,3 +108,6 @@ allStarMatrix <- as.matrix(allStar)
 library("mvnormtest")
 
 mshapiro.test(t(allStarMatrix)) #violates assumption of normality
+
+# Looking for Listings for 0 or 1 trips taken
+Trips <- Turo1 %>% filter(list.renterTripsTaken <= 1 )
